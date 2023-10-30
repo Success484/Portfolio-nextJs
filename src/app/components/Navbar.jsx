@@ -2,7 +2,8 @@
 import Link from 'next/link';
 import React, { useState, useEffect, useRef } from 'react'; 
 import NavLink from './NavLink';
-import { Bars3Icon, XmarkIcon } from '@heroicons/react/24/solid';
+import {RxHamburgerMenu} from 'react-icons/rx'
+import {AiOutlineClose} from 'react-icons/ai'
 import MenuOverlay from './MenuOverlay';
 
 const NavLinks = [
@@ -54,14 +55,14 @@ export default function Navbar() {
               onClick={() => setIsOpen(true)}
               className='flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hover:border-white text-slate-200'
             >
-              <Bars3Icon className='h-5 w-5' />
+              <RxHamburgerMenu className='h-5 w-5' />
             </button>
           ) : (
             <button
               onClick={() => setIsOpen(false)}
               className='flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hover:border-white text-slate-200'
             >
-              <XmarkIcon className='h-5 w-5' />
+              <AiOutlineClose className='h-5 w-5' />
             </button>
           )}
         </div>
