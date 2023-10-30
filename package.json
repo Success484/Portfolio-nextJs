@@ -9,13 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "animation": "^0.1.3",
     "autoprefixer": "10.4.15",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
+    "framer-motion": "^10.16.4",
     "next": "13.4.19",
     "postcss": "8.4.28",
     "react": "18.2.0",
+    "react-animated-numbers": "^0.16.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.11.0",
+    "react-type": "^0.1.0",
+    "react-type-animation": "^3.2.0",
+    "resend": "^1.1.0",
     "tailwindcss": "3.3.3"
   }
 }
