@@ -37,7 +37,7 @@ export default function HeroSection() {
           </h1>
           <p className='text-[#adb7be] text-base sm:text-lg lg:text-xl mb-6'>
             Hello, welcome.
-            My Name Is Success Simeon, And I'm A Web Developer And A UI/UX Designer
+            My Name Is Success Simeon, And Im A Web Developer And A UI/UX Designer
           </p>
           <div>
             <button className='px-6 lg:w-[200px] w-full sm:w-full py-3 rounded-full mr-4 bg-gradient-to-br from-orange-500 via-gray-600 to-pink-500 hover:bg-slate-200 text-white'>
