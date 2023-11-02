@@ -15,7 +15,7 @@ const achievementsList = [
   {
     prefix: '~',
     metric: 'Users',
-    value: 100, 
+    value: 100,
   },
   {
     metric: 'Awards',
@@ -23,24 +23,24 @@ const achievementsList = [
   },
   {
     metric: 'Years',
-    value: 5,
+    value: 2,
   },
 ];
 
 export default function AchievementsSection() {
   return (
-    <div className='py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-      <div className='border-[#33353f] border rounded-md py-8 px-16 flex flex-row items-center justify-between'>
+    <div className='py-8 px-4 xl:px-16'>
+      <div className='border border-[#33353f] rounded-md py-8 px-4 sm:px-8 xl:px-16 flex flex-col md:flex-row items-center justify-between'>
         {achievementsList.map((achievement, index) => {
           return (
-            <div key={index} className='flex flex-col items-center justify-center mx-4'>
-              <h2 className='text-white text-4xl font-bold flex flex-row'>
-                {achievement.prefix}
+            <div key={index} className='my-4 md:my-0 flex flex-col items-center justify-center'>
+              <h2 className='text-white text-4xl font-bold flex flex-row items-center'>
+                {achievement.prefix && <span className='mr-1'>{achievement.prefix}</span>}
                 <AnimatedNumbers
                   includeComma
                   animateToNumber={parseInt(achievement.value)}
-                  locale='en-US' // Use "en-US" format
-                  className='text-white text-4xl font-bold'
+                  locale='en-US'
+                  className='text-4xl font-bold'
                   configs={(_, index) => {
                     return {
                       mass: 1,
@@ -49,7 +49,7 @@ export default function AchievementsSection() {
                     };
                   }}
                 />
-                {achievement.postfix}
+                {achievement.postfix && <span className='ml-1'>{achievement.postfix}</span>}
               </h2>
               <p className='text-[#adb7be] text-base'>{achievement.metric}</p>
             </div>

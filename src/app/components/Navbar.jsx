@@ -47,7 +47,7 @@ export default function Navbar() {
     <nav className='fixed m-auto border border-[#33353f] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-95 ease-in-out duration-300'>
       <div className='flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 mt-3'>
         <Link href={'/'} className='text-2xl md:text-5xl text-white font-semibold'>
-          LOGO
+          SUCCESS
         </Link>
         <div className='mobile-menu block md:hidden' ref={menuRef}>
           {!isOpen ? (
