@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function ProjectCard({imgUrl, title, description, gitUrl, previewUrl}) {
   return (
-    <div>
+    <div id='projects-section'>
       <div className='h-52 md:h-72 rounded-t-xl relative group' 
         style={{background: `url(${imgUrl})`,
         backgroundSize: "cover"}}>

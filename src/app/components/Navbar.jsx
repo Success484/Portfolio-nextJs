@@ -1,23 +1,25 @@
 'use client';
+'use client';
 import Link from 'next/link';
 import React, { useState, useEffect, useRef } from 'react'; 
 import NavLink from './NavLink';
-import {RxHamburgerMenu} from 'react-icons/rx'
-import {AiOutlineClose} from 'react-icons/ai'
+import { RxHamburgerMenu } from 'react-icons/rx';
+import { AiOutlineClose } from 'react-icons/ai';
 import MenuOverlay from './MenuOverlay';
+import { Link as ScrollLink } from 'react-scroll';
 
 const NavLinks = [
   {
     title: 'About',
-    path: '#about',
+    path: 'about-section',
   },
   {
     title: 'Projects',
-    path: '#projects',
+    path: 'projects-section',
   },
   {
     title: 'Contact',
-    path: '#contact',
+    path: 'contact-section',
   },
 ];
 
@@ -70,7 +72,14 @@ export default function Navbar() {
           <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0'>
             {NavLinks.map((nav) => (
               <li key={nav.title}>
-                <NavLink href={nav.path} title={nav.title} />
+                <ScrollLink
+                  to={nav.path}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  <NavLink title={nav.title} />
+                </ScrollLink>
               </li>
             ))}
           </ul>

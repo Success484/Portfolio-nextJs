@@ -1,7 +1,8 @@
 'use client'
-import Image from 'next/image'
-import React, { useState } from 'react'
-import TabButton from './TabButton'
+import Image from 'next/image';
+import React, { useState } from 'react';
+import TabButton from './TabButton';
+import { Link as ScrollLink } from 'react-scroll'; 
 
 const TAB_DATA = [
     {
@@ -49,7 +50,7 @@ export default function AboutSection() {
   }
 
   return (
-    <section className='text-white'>
+    <section id="about-section" className='text-white'>
       <div className='md:grid md:grid-cols-2 gap-8 item-center py-8 px-4 xl:gap-16 sm:py-16 '>
         <Image src='/table.jpg' height={500} width={500} alt='setup' />
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
