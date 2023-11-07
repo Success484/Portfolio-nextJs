@@ -3,6 +3,16 @@ import Image from 'next/image';
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
+import {Link as ScrollLink } from 'react-scroll';
+import EmailSection from './EmailSection';
+
+
+const contact = [
+  {
+    path:'contact-section',
+    title: 'Hire me'
+  }
+]
 
 export default function HeroSection() {
   return (
@@ -39,10 +49,21 @@ export default function HeroSection() {
             Hello, welcome. My Name Is Success Simeon, And Im a Web Developer and a UI/UX Designer.
           </p>
           <div>
-            <button className='px-6 lg:w-full sm:w-full py-3 rounded-full mr-4 bg-gradient-to-br from-orange-500 via-gray-600 to-pink-500 hover:bg-slate-200 text-white'>
-              Hire Me
-            </button>
-            <button className='px-1 lg:w-full sm:w-full py-1 rounded-full bg-gradient-to-br from-orange-500 via-gray-600 to-pink-500 hover:bg-slate-800 text-white mt-3'>
+          {contact.map((email) => (
+            <li key={email.title}>
+            <ScrollLink
+                  to={email.path}
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+            <ul className='px-6 lg:w-full sm:w-full text-center cursor-pointer py-3 rounded-full mr-4 bg-gradient-to-br from-orange-500 via-gray-600 to-pink-500 hover:bg-slate-200 text-white'>
+                {email.title}
+            </ul>
+               </ScrollLink>
+               </li>
+               ))}
+            <button className='px-1 lg:w-full sm:w-full py-1 rounded-full bg-gradient-to-br from-orange-500 via-gray-600 to-pink-500 hover:bg-gray-600 text-white mt-3'>
               <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
                 Download CV
               </span>
