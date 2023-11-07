@@ -57,9 +57,9 @@ export default function HeroSection() {
                   smooth={true}
                   duration={500}
                 >
-            <ul className='px-6 lg:w-full sm:w-full text-center cursor-pointer py-3 rounded-full mr-4 bg-gradient-to-br from-orange-500 via-gray-600 to-pink-500 hover:bg-slate-200 text-white'>
+            <span className='px-6 lg:w-full sm:w-full text-center cursor-pointer py-3 rounded-full mr-4 bg-gradient-to-br from-orange-500 via-gray-600 to-pink-500 hover:bg-slate-200 text-white'>
                 {email.title}
-            </ul>
+            </span>
                </ScrollLink>
                </li>
                ))}
