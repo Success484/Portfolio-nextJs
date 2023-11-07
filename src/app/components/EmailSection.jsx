@@ -55,7 +55,7 @@ export default function EmailSection() {
           Whether you have a question or just want to say hi, I will try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com" target="_blank">
+          <Link href="https://github.com/Success484/Portfolio-nextJs.git" target="_blank">
             <AiFillGithub size={40} color="white" />
           </Link>
 

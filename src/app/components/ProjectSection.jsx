@@ -8,30 +8,30 @@ import { useInView } from 'react-intersection-observer'
 const projectsData = [
     {
         id: 1,
-        title: 'React Portfolio Website',
+        title: 'Next.js Portfolio Website',
         description: 'project 1 description',
         image: '/portfolio.jpg',
         tag: ["All", "Web"],
-        gitUrl: '/',
-        previewUrl: '/'
+        gitUrl: 'https://github.com/Success484/Portfolio-nextJs.git',
+        previewUrl: 'https://success-portfolio-theta.vercel.app/'
     },
     {
         id: 2,
-        title: 'React Calculator Website',
+        title: 'Html/Css Calculator Website',
         description: 'project 2 description',
         image: '/calculator.png',
         tag: ["All", "Mobile"],
-        gitUrl: '/',
-        previewUrl: '/'
+        gitUrl: 'https://github.com/Success484/Calculator.git',
+        previewUrl: 'https://success484.github.io/Calculator/'
     },
     {
         id: 3,
-        title: 'React E-commerce Website',
+        title: 'Next.js E-commerce Website',
         description: 'project 3 description',
         image: '/ecommerce.jpg',
         tag: ["All", "Web"],
-        gitUrl: '/',
-        previewUrl: '/'
+        gitUrl: 'https://github.com/Success484/E-commerce-nextJS.git',
+        previewUrl: 'https://wares.vercel.app'
     },
     {
         id: 4,
