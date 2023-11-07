@@ -50,18 +50,18 @@ export default function HeroSection() {
           </p>
           <div>
           {contact.map((email) => (
-            <ul key={email.title}>
+            <li key={email.title}>
             <ScrollLink
                   to={email.path}
                   spy={true}
                   smooth={true}
                   duration={500}
                 >
-            <span className='px-6 lg:w-full sm:w-full text-center cursor-pointer py-3 rounded-full mr-4 bg-gradient-to-br from-orange-500 via-gray-600 to-pink-500 hover:bg-slate-200 text-white'>
+            <ul className='px-6 lg:w-full sm:w-full text-center cursor-pointer py-3 rounded-full mr-4 bg-gradient-to-br from-orange-500 via-gray-600 to-pink-500 hover:bg-slate-200 text-white'>
                 {email.title}
-            </span>
+            </ul>
                </ScrollLink>
-               </ul>
+               </li>
                ))}
             <button className='px-1 lg:w-full sm:w-full py-1 rounded-full bg-gradient-to-br from-orange-500 via-gray-600 to-pink-500 hover:bg-gray-600 text-white mt-3'>
               <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
