@@ -56,7 +56,7 @@ export default function AboutSection() {
         <Image src='/table.jpg' height={500} width={500} alt='setup' />
         <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
           <h2 className='text-4xl font-bold text-white mb-4'>About me</h2>
-          <p className='text-base lg:text-lg'>I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Next.js, Node.js, HTML, CSS, and Git, and have experience using Figma. I am a quick learner and am always looking to expand my knowledge and skill set. I am a team player and am excited to work with others to create amazing applications. </p>
+          <p className='text-base lg:text-lg'>I am a frontend web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Next.js, Node.js, HTML, CSS, and Git, and have experience using Figma. I am a quick learner and am always looking to expand my knowledge and skill set. I am a team player and am excited to work with others to create amazing applications. </p>
           <div className='flex flex-row mt-8 gap-2'>
             <TabButton selectTab={() => handleTabChange('skills')} active={tab === 'skills'}>
               Skills
