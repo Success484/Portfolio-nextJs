@@ -101,14 +101,14 @@ export default function EmailSection() {
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="messages" className="text-white block text-sm mb-2 font-medium">
+            <label htmlFor="message" className="text-white block text-sm mb-2 font-medium">
               Message
             </label>
             <textarea
               value={formData.message}
               onChange={handleChange}
               name="message"
-              id="messages"
+              id="message"
               className="bg-[#18191e] border border-[#33353f] placeholder-[#9ca2a9] text-gray-600 text-sm rounded-lg block w-full p-2.5"
               placeholder="Your Message"
             />
