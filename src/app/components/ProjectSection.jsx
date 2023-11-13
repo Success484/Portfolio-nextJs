@@ -34,6 +34,15 @@ const projectsData = [
         previewUrl: 'https://wares.vercel.app'
     },
     {
+        id: 6,
+        title: 'React Weather Website',
+        description: 'project 6 description',
+        image: '/weathe.png',
+        tag: ["All", "Web"],
+        gitUrl: 'https://github.com/Success484/Weather-App-React.git',
+        previewUrl: 'https://weather-app-react-nu-brown.vercel.app/'
+    },
+    {
         id: 4,
         title: 'React Blog Website',
         description: 'project 4 description',
@@ -51,15 +60,6 @@ const projectsData = [
         gitUrl: '/',
         previewUrl: '/'
     },
-    {
-        id: 6,
-        title: 'React Weather Website',
-        description: 'project 6 description',
-        image: '/weathe.png',
-        tag: ["All", "Web"],
-        gitUrl: '/',
-        previewUrl: '/'
-    }
 ]
 
 export default function ProjectSection() {
