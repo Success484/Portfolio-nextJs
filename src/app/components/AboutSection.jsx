@@ -37,7 +37,7 @@ const TAB_DATA = [
         id : 'certifications',
         content : (
             <ul className='list-disc pl-2'>
-                <li>Fullstack Developer</li>
+                <li>Front End Development</li>
             </ul>
         )
     }
