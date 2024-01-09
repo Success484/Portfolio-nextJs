@@ -46,7 +46,7 @@ export default function HeroSection() {
             />
           </h1>
           <p className='text-[#adb7be] text-base sm:text-lg lg:text-xl mb-6'>
-            Hello, welcome. My Name Is Success Simeon, And Im a Web Developer and a UI/UX Designer.
+            Hello, welcome. My Name Is Success Obayangbon, And Im a Web Developer and a UI/UX Designer.
           </p>
           <div>
           {contact.map((email) => (
